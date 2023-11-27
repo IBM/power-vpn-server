@@ -34,9 +34,10 @@ module "certificate" {
 }
 
 module "vpc" {
-  source            = "./modules/vpc"
-  name              = var.name
-  resource_group_id = data.ibm_resource_group.group.id
+  source                    = "./modules/vpc"
+  name                      = var.name
+  resource_group_id         = data.ibm_resource_group.group.id
+  address_prefix_management = var.create_default_vpc_address_prefixes ? "auto" : "manual"
 }
 
 module "vpn" {
