@@ -46,6 +46,18 @@ Transit Gateway. This can be done during the Subnet creation.
 To order and use IBM Cloud services, billing information is required for your account. See
 [Upgrading Your Account](https://cloud.ibm.com/docs/account?topic=account-upgrading-account).
 
+#### IAM Access
+
+You will need the following IAM access, or higher, to deploy this VPN
+
+|Service Name</br>(Resource Type)|Service Access|Platform Access|
+|---|---|---|
+|VPC Infrastructure Services</br>  - Virtual Private Cloud</br>  - Subnet</br>  - Security Group for VPC</br>  - Client VPN for VPC</br>||Editor|
+|Cloud Object Storage|Writer||
+|Secrets Manager|Writer||
+|Transit Gateway</br>  - Transit Gateway|Manager|Editor|
+|Workspace for Power Systems Virtual Server|Manager|Editor|
+
 #### Install Terraform
 
 If you wish to run Terraform locally, see
