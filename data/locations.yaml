@@ -1,5 +1,6 @@
 # Location data pulled from https://cloud.ibm.com/docs/power-iaas?topic=power-iaas-creating-power-virtual-server
 # and https://access.redhat.com/documentation/en-us/openshift_container_platform/4.13/html/installing/installing-on-ibm-power-virtual-server
+# and https://cloud.ibm.com/docs/power-iaas?topic=power-iaas-per
 
 dal10:
   per_enabled: true
@@ -8,7 +9,7 @@ dal10:
   data_center: dal10
   region: dal
 dal12:
-  per_enabled: false
+  per_enabled: true
   vpc_region: us-south
   vpc_zone: us-south-2
   data_center: dal12
@@ -26,25 +27,25 @@ us-east:
   data_center: wdc04
   region: us-east
 wdc06:
-  per_enabled: false
+  per_enabled: true
   vpc_region: us-east
   vpc_zone: us-east-1
   data_center: wdc06
   region: us-east
 wdc07:
-  per_enabled: false
+  per_enabled: true
   vpc_region: us-east
   vpc_zone: us-east-2
   data_center: wdc07
   region: us-east
 sao01:
-  per_enabled: false
+  per_enabled: true
   vpc_region: br-sao
   vpc_zone: br-sao-1
   data_center: sao01
   region: sao
 sao04:
-  per_enabled: false
+  per_enabled: true
   vpc_region: br-sao
   vpc_zone: br-sao-2
   data_center: sao04
@@ -62,13 +63,13 @@ mon01:
   data_center: mon01
   region:
 eu-de-1:
-  per_enabled: false
+  per_enabled: true
   vpc_region: eu-de
   vpc_zone: eu-de-2
   data_center: fra04
   region: eu-de
 eu-de-2:
-  per_enabled: false
+  per_enabled: true
   vpc_region: eu-de
   vpc_zone: eu-de-3
   data_center: fra05
@@ -109,3 +110,15 @@ osa21:
   vpc_zone: jp-osa-1
   data_center: osa21
   region: osa
+mad02:
+  per_enabled: true
+  vpc_region: eu-es
+  vpc_zone: eu-es-1
+  data_center: mad02
+  region: eu-es
+mad04:
+  per_enabled: true
+  vpc_region: eu-es
+  vpc_zone: eu-es-2
+  data_center: mad04
+  region: eu-es
