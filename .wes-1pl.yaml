@@ -1,0 +1,19 @@
+version: v0.10
+toolchain:
+  region: au-syd
+code_compliance_checks:
+  terraform:
+    run: false
+    variables:
+      - name: power_workspace_location
+        value: dal10
+      - name: resource_group_name
+        value: Travis
+      - name: secret_manager_name
+        value: travis-cms
+      - name: cos_instance_name
+        value: travis-cos
+      - name: name
+        value: travis-pvs
+      - name: data_location_file_path
+        value: data/locations.yaml

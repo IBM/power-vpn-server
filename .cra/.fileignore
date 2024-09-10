@@ -1,0 +1,2 @@
+# ignore temporary copies of referenced repos
+.terraform
